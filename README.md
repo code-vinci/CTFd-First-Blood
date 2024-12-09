@@ -37,4 +37,4 @@ Enjoy!
 
 ## Contributions
 
-Welcome! :D
+[b3nj4m1no](https://github.com/b3nj4m1no)
