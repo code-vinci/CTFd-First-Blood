@@ -1,6 +1,6 @@
-# ctfd-solve-announcer-discord
+# CTFd First Bloods Discord bot
 
-A simple webhook based Discord bot to announce CTFd solves
+A fancy Discord bot to announce CTFd solves
 
 ## Usage
 
