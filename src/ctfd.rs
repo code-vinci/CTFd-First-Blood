@@ -58,6 +58,7 @@ impl CTFdClient {
         }
     }
 
+    // Use CTFd Challenges API 
     pub async fn get_challenges(&self) -> Result<Vec<Challenge>, reqwest::Error> {
         let url = format!("{}/api/v1/challenges", self.url);
         let response = self
@@ -71,6 +72,7 @@ impl CTFdClient {
         Ok(response.data.unwrap())
     }
 
+    // Use CTFd Teams API 
     pub async fn get_team(&self, team_id: i64) -> Result<Team, reqwest::Error>{
         let url = format!("{}/api/v1/teams/{}", self.url, team_id);
         let response = self
@@ -84,6 +86,7 @@ impl CTFdClient {
         Ok(response.data.unwrap())
     }
 
+    // Use CTFd Top 10 API 
     pub async fn get_top_10_teams(&self) -> Result<HashMap<TeamId, TeamPosition>, reqwest::Error> {
         let url = format!("{}/api/v1/scoreboard/top/10", self.url);
         let response = self
@@ -104,6 +107,7 @@ impl CTFdClient {
     }
 }
 
+// Use CTFd Challenges API 
 impl Challenge {
     pub async fn get_solves(&self, client: &CTFdClient) -> Result<Vec<ChallengeSolver>, reqwest::Error> {
         let url = format!("{}/api/v1/challenges/{}/solves", client.url, self.id);
