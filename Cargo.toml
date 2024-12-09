@@ -4,7 +4,7 @@ description = "Discord bot to announce CTFd solves"
 license-file = "LICENSE"
 repository = "https://github.com/code-vinci/CTFd-First-Blood"
 version = "0.1.0"
-edition = "2024"
+edition = "2021"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
